@@ -23,7 +23,7 @@ html, body, section {
 
 .left-half {
   background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,1) 38%, rgba(212,210,210,1) 100%);
+  background: radial-gradient(circle, rgb(255,255,255) 38%, rgb(212,210,210) 100%);
   flex: 1;
   max-width: 50%;
 }
