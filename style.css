@@ -97,7 +97,7 @@ html, body, section {
 	max-width: 100%;
 	height: auto;
 	object-fit: contain;
-	cursor: pointer;
+/* 	cursor: pointer; */
 }
 
 #left {
