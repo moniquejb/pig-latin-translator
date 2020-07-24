@@ -408,3 +408,49 @@ and (orientation : portrait) {
 		min-height: 50vh;
 	}
 }*/
+
+@media only screen 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	.container {
+		flex-direction: row;
+		height: 100vh;
+	}
+
+	#pig_head {
+		max-width: 60%;
+		margin-top: 20px;
+		max-height: initial;
+		display: flex;
+		flex-direction: column;
+	}
+	#heading {
+		font-size: 2vw;
+	}
+
+	#left {
+		flex-direction: row;
+	}
+
+	#description {
+		font-size: 1em;
+		line-height: 15px;
+	}
+
+	.right-half {
+		flex: 1;
+  	max-width: 50%;
+  	min-height: 100vh;
+	}
+
+	.left-half {
+		flex: 1;
+  	max-width: 50%;
+  	min-height: 100vh;
+	}
+
+	#input {
+		height: 70px;
+		width: 300px;
+	}
+}
