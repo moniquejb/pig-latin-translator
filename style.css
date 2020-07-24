@@ -433,8 +433,8 @@ and (orientation : landscape) {
 	}
 
 	#description {
-		font-size: 1em;
-		line-height: 15px;
+		font-size: 0.9em;
+		line-height: 13px;
 	}
 
 	.right-half {
