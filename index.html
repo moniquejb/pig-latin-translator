@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Translate to Pig Latin</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2982ea222f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section class="container">
+	  	<div id="left" class="left-half">
+	  		<div id="pig_head">
+			    <div id="images">
+				    <!-- <img id="pig-click" src="pigclicksmall.png"> -->
+				    <img id="pig-img" src="pig.png">
+				</div>
+			    <h1 id="heading">PIG LATIN TRANSLATOR</h1>
+			</div>
+		    <div id="description">
+			    <p>Pig Latin is a language game in which words in English are altered to conceal the words from those not familiar with the rules. It is unrelated to Latin, and the name is used for its English connotations as being strange and foreign-sounding. The rules are:</p><br>
+					<ul>
+						<li>If a word begins with a consonant, take the first consonant or consonant cluster, move it to the end of the word, and add "ay" to it.</li>
+						<li>If a word begins with a vowel, just add "way" at the end.</li>
+					</ul>
+				<a href="#right" id="downlink"><button type="button" id="down">Get Started</button></a>
+			</div>
+		</div>
+	  	<div id="right" class="right-half">
+	  		<div id = "field">
+				<input type="text" name="eng" id="input" placeholder="Enter your text here" required>
+				<button type = "button" id="button">Translate</button>
+			</div>
+			<div id="answer-box">
+				<!-- <h3 id="translation">Your text translation:</h3> -->
+				<!-- <p id="advise">Click on your translation to translate between Pig Latin and English</p> -->
+				<button type="button" id="reverse"><i class="fas fa-exchange-alt"></i> &nbsp;Reverse Translate</button>
+				<div id="copy_new">
+					<button type="button" id="copy"><i class="far fa-clipboard"></i> &nbsp;Copy</button>
+					<button type="button" id="newtrans"><i class="far fa-plus-square"></i> &nbsp;New</button>
+				</div>
+			</div>
+	  	</div>
+	</section>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
