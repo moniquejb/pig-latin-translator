@@ -35,7 +35,7 @@ html, body, section {
 }
 
 .right-half {
-  background-color: #f9babb;
+  background-color: rgb(249, 186, 187);
   flex: 1;
   max-width: 50%;
 }
