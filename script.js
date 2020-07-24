@@ -109,7 +109,7 @@ function newTrans(){
 button.addEventListener("click", storeValue, false);
 document.addEventListener("keypress", storeEnter, false);
 newtrans.addEventListener("click", newTrans, false);
-images.addEventListener("click", titleTranslate, false);
+// images.addEventListener("click", titleTranslate, false);
 reverseBtn.addEventListener("click", reverse, false);
 // answer.addEventListener("mousedown", function(e){e.preventDefault();}, false);
 // heading.addEventListener("mousedown", function(e){e.preventDefault();}, false);
