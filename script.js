@@ -1,18 +1,19 @@
-var button = document.getElementById("button");
-var input = document.getElementById("input");
-var engInput = "";
-var translation = document.getElementById("translation");
-var heading = document.getElementById("heading");
-var images = document.getElementById("images");
-var copyBtn = document.getElementById("copy");
-var answerbox = document.getElementById("answer-box");
-var newtrans = document.getElementById("newtrans");
-var reverseBtn = document.getElementById("reverse");
+// Variable declaration
+let button = document.getElementById("button");
+let input = document.getElementById("input");
+let engInput = "";
+let translation = document.getElementById("translation");
+let heading = document.getElementById("heading");
+let images = document.getElementById("images");
+let copyBtn = document.getElementById("copy");
+let answerbox = document.getElementById("answer-box");
+let newtrans = document.getElementById("newtrans");
+let reverseBtn = document.getElementById("reverse");
 
-var p = document.createElement("p");
+let p = document.createElement("p");
 p.id = "answer";
 answerbox.insertBefore(p, answerbox.firstChild);;
-var answer = document.getElementById("answer");
+let answer = document.getElementById("answer");
 
 
 
@@ -22,7 +23,8 @@ function translatePigLatin(str) {
   let arr = str.split(" ");
   let vowels = /^((\W*)([aeiou]+))(\w*)(\W*)/i;
   let cons = /(\W*)([bcdfghjklmnpqrstvwxyz]+)('*"*)([bcdfghjklmnpqrstvwxyz]*)([aeiou]*)(\w*)(\W*)/i;
-
+  
+    // Test each word for vowels, consonatnts or symbols and handle them accordingly
     arr.forEach((word) => {
       if(vowels.test(word)){
         result.push(word.replace(vowels, "$2$3$4way$5"));
@@ -34,6 +36,7 @@ function translatePigLatin(str) {
     })
 
     let finalClone = [...result];
+    // Handle capitalisation of words that include capital letters
     result.forEach(word => {
       let capitalReg = /[A-Z]/.test(word);
       if(capitalReg && /^\W+/.test(word)){
@@ -54,8 +57,8 @@ function translatePigLatin(str) {
     
     return finalClone.join(" ");
   }
-// }
 
+// Determine if text has been iputted, store value if yes, alert user if no
 function storeValue(){
 	if (input.value.length > 0){
 		engInput = input.value;
@@ -69,6 +72,7 @@ function storeValue(){
 	}
 }
 
+// Reverse translate (Pig Latin to English)
 function reverse(){
   if(p.innerHTML == translatePigLatin(engInput)){
     p.innerHTML = engInput;
@@ -77,9 +81,9 @@ function reverse(){
   }
 }
 
-
+// Copy text to user's clipboard
 function copyText () {
-    var dummy = document.createElement("textarea");
+    let dummy = document.createElement("textarea");
     document.body.appendChild(dummy);
     dummy.value = answer.textContent;
     dummy.select();
@@ -87,30 +91,24 @@ function copyText () {
     document.body.removeChild(dummy);
 }
 
+// Charcode 13 = Enter key
+// Let user pushing enter key submit value
 function storeEnter(e){
 	if(e.charCode === 13){
 		storeValue();
 	}
 }
 
-function titleTranslate(){
-  if(heading.textContent == "PIG LATIN TRANSLATOR"){
-    heading.textContent = "IGPAY ATINLAY ANSLATORTRAY";
-  } else {
-    heading.textContent = "PIG LATIN TRANSLATOR";
-  }}
-
+// Reset for new translation
 function newTrans(){
     input.style.display = 'initial';
     button.style.display = 'initial';
     answerbox.style.display = 'none';
 }
 
+// Event Listeners
 button.addEventListener("click", storeValue, false);
 document.addEventListener("keypress", storeEnter, false);
 newtrans.addEventListener("click", newTrans, false);
-// images.addEventListener("click", titleTranslate, false);
 reverseBtn.addEventListener("click", reverse, false);
-// answer.addEventListener("mousedown", function(e){e.preventDefault();}, false);
-// heading.addEventListener("mousedown", function(e){e.preventDefault();}, false);
 copyBtn.addEventListener("click", copyText, false);
