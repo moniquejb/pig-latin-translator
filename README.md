@@ -1,7 +1,7 @@
 [![Banner](https://i.postimg.cc/mZt56PJ7/Git-banner-template-01.jpg)](https://postimg.cc/Thv0K3RP)
 
 # Pig Latin Translator
-The [Pig Latin Translator](https://moniquejb.github.io/pig-latin-translator/) was the first website I ever built- so go easy on me, it's far from perfect! :sweat_smile: Even with it's imperfections, I learnt a lot about coding at that part of my journey through this project. It was the point where, after having studied for quite some time already, it finally clicked for me how HTML, CSS and JavaScript came together to form a functioning website.  
+The [Pig Latin Translator](https://moniquejb.github.io/pig-latin-translator/) was the first website I ever built (2021)- so go easy on me, it's far from perfect! :sweat_smile: Even with it's imperfections, I learnt a lot about coding at that part of my journey through this project. It was the point where, after having studied for quite some time already, it finally clicked for me how HTML, CSS and JavaScript came together to form a functioning website.  
 
 
 ## Technologies
@@ -20,7 +20,7 @@ would consider the symbol location/quantity and translate to
 
 ## Developement Process
 ### Design
-I chose to keep things simple with this website as it's main purpose was to learn and improve coding. Even so, I still created the visual image of the pig myself (process below) and created a basic wireframe and colour scheme before moving ahead with coding the visual aspects of the site.
+I chose to keep things simple with this website as it's main purpose was to learn and improve coding. Even so, I still created the visual image of the pig myself (process below) and created a basic layout and colour scheme before moving ahead with coding the visual aspects of the site.
 
 [![Logo creation](https://i.postimg.cc/wMYRJWr6/image.png)](https://postimg.cc/phkdMBx7)
 
@@ -33,4 +33,4 @@ As can be expected, the site could be improved in many ways. It could have added
 The media queries need to be updated/improved and considerations need to be made for mobile browsers that have extra search bars etc that affect viewport dimensions. Although it would be nice to include these improvements, I don't believe it is necessary to spent time on it currently as the project served it's purpose in my coding journey. Perhaps I'll get to it on a rainy day :could-with-rain:.
 
 
-[![LinkedIn badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mjblignaut/) [![Instagram badge](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/monique.jaimee/) [![Behance badge](https://img.shields.io/badge/Behance-blue?style=for-the-badge&logo=behance)](https://www.behance.net/MoniqueBlignaut) [![Gmail badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:moniblig@gmail.com)
+[![LinkedIn badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mjblignaut/) [![Instagram badge](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/monique.jaimee/) [![Gmail badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:moniblig@gmail.com)
